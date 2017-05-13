@@ -5,12 +5,12 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fantasticskybaby.github.io/"/>
-  <updated>2017-05-09T11:32:11.000Z</updated>
+  <updated>2017-05-12T06:43:22.000Z</updated>
   <id>https://fantasticskybaby.github.io/</id>
   
   <author>
-    <name>翻天娃</name>
-    
+    <name>FantasticSkyBaby</name>
+    <email>lixinhaos@sina.cn</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
@@ -20,9 +20,9 @@
     <link href="https://fantasticskybaby.github.io/2017/05/09/MarkDown%E7%94%A8%E6%B3%95/"/>
     <id>https://fantasticskybaby.github.io/2017/05/09/MarkDown用法/</id>
     <published>2017-05-09T07:42:59.000Z</published>
-    <updated>2017-05-09T11:32:11.000Z</updated>
+    <updated>2017-05-12T06:43:22.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Markdown 语法和 MWeb 写作使用说明<br>Markdown 的设计哲学<br>本文约定<br>标题<br>第一级标题 </p><h1><br>第二级标题 <h2><br>第六级标题 <h6><br>强调<br>换行<br>列表<br>无序列表<br>有序列表<br>任务列表（Task lists）<br>图片<br>链接<br>区块引用<br>行内代码<br>多行或者一段代码<br>顺序图或流程图<br>表格<br>删除线<br>分隔线<br>MathJax<br>脚注（Footnote）<br>注释和阅读更多<br>TOC<br>Markdown 语法和 MWeb 写作使用说明<br>Markdown 的设计哲学<p></p>
+    <content type="html"><![CDATA[<p>Markdown 语法和 MWeb 写作使用说明<br>Markdown 的设计哲学<br>本文约定<br>标题<br>第一级标题 </p><h1><br><a id="more"></a><br>第二级标题 <h2><br>第六级标题 <h6><br>强调<br>换行<br>列表<br>无序列表<br>有序列表<br>任务列表（Task lists）<br>图片<br>链接<br>区块引用<br>行内代码<br>多行或者一段代码<br>顺序图或流程图<br>表格<br>删除线<br>分隔线<br>MathJax<br>脚注（Footnote）<br>注释和阅读更多<br>TOC<br>Markdown 语法和 MWeb 写作使用说明<br>Markdown 的设计哲学<p></p>
 <p>Markdown 的目標是實現「易讀易寫」。<br>不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。<br>Markdown 的語法有個主要的目的：用來作為一種網路內容的寫作用語言。<br>本文约定</p>
 <p>如果有写 效果如下：， 在 MWeb 编辑状态下只有用 CMD + 4 或 CMD + R 预览才可以看效果。</p>
 <p>标题</p>
@@ -70,7 +70,7 @@
 <p>GitHub set up</p>
 <p>链接</p>
 <p>Markdown 语法：</p>
-<p>email <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;</a><br><a href="http://github.com" target="_blank" rel="external">GitHub</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a><br>Control + Shift + L 可插入Markdown语法。<br>如果是 MWeb 的文档库中的文档，拖放或CMD + Option + I 导入非图片时，会生成连接。<br>效果如下：</p>
+<p>email <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#x65;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;">&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#x65;&#x40;&#101;&#120;&#97;&#109;&#x70;&#x6c;&#x65;&#x2e;&#99;&#111;&#x6d;</a><br><a href="http://github.com" target="_blank" rel="external">GitHub</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a><br>Control + Shift + L 可插入Markdown语法。<br>如果是 MWeb 的文档库中的文档，拖放或CMD + Option + I 导入非图片时，会生成连接。<br>效果如下：</p>
 <p>Email 连接： example@example.com<br>连接标题Github网站<br>自动生成连接像： <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a> 这样</p>
 <p>区块引用</p>
 <p>Markdown 语法：</p>
@@ -149,7 +149,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;Markdown 语法和 MWeb 写作使用说明&lt;br&gt;Markdown 的设计哲学&lt;br&gt;本文约定&lt;br&gt;标题&lt;br&gt;第一级标题 &lt;/p&gt;&lt;h1&gt;&lt;br&gt;第二级标题 &lt;h2&gt;&lt;br&gt;第六级标题 &lt;h6&gt;&lt;br&gt;强调&lt;br&gt;换行&lt;br&gt;列表&lt;br&gt;无序列表&lt;br&gt;有序列表&lt;
+      &lt;p&gt;Markdown 语法和 MWeb 写作使用说明&lt;br&gt;Markdown 的设计哲学&lt;br&gt;本文约定&lt;br&gt;标题&lt;br&gt;第一级标题 &lt;/p&gt;&lt;h1&gt;&lt;br&gt;
     
     </summary>
     
