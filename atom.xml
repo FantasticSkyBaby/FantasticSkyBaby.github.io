@@ -70,7 +70,7 @@
 <p>GitHub set up</p>
 <p>链接</p>
 <p>Markdown 语法：</p>
-<p>email <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;">&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x40;&#x65;&#x78;&#97;&#x6d;&#x70;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;</a><br><a href="http://github.com" target="_blank" rel="external">GitHub</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a><br>Control + Shift + L 可插入Markdown语法。<br>如果是 MWeb 的文档库中的文档，拖放或CMD + Option + I 导入非图片时，会生成连接。<br>效果如下：</p>
+<p>email <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#x65;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;">&#x65;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#101;&#120;&#x61;&#109;&#112;&#x6c;&#101;&#x2e;&#x63;&#x6f;&#109;</a><br><a href="http://github.com" target="_blank" rel="external">GitHub</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a><br>Control + Shift + L 可插入Markdown语法。<br>如果是 MWeb 的文档库中的文档，拖放或CMD + Option + I 导入非图片时，会生成连接。<br>效果如下：</p>
 <p>Email 连接： example@example.com<br>连接标题Github网站<br>自动生成连接像： <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a> 这样</p>
 <p>区块引用</p>
 <p>Markdown 语法：</p>
