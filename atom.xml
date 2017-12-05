@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fantasticskybaby.github.io/"/>
-  <updated>2017-12-05T08:39:23.051Z</updated>
+  <updated>2017-05-12T06:43:22.000Z</updated>
   <id>https://fantasticskybaby.github.io/</id>
   
   <author>
@@ -14,48 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://fantasticskybaby.github.io/2017/12/05/iOSER~%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8E%9F%E5%A7%8B%E6%96%B9%E6%B3%95%E6%89%BE%E5%88%B0%E7%9B%AE%E6%A0%87%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>https://fantasticskybaby.github.io/2017/12/05/iOSER~记一次原始方法找到目标控制器的方法/</id>
-    <published>2017-12-05T03:58:56.315Z</published>
-    <updated>2017-12-05T08:39:23.051Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Hooker-记一次原始方法找到目标控制器的方法"><a href="#Hooker-记一次原始方法找到目标控制器的方法" class="headerlink" title="Hooker~~~~记一次原始方法找到目标控制器的方法"></a><strong><em>Hooker~~~~记一次原始方法找到目标控制器的方法</em></strong></h1><h2 id="环境-目标"><a href="#环境-目标" class="headerlink" title="环境-目标"></a>环境-目标</h2><blockquote>
-<p>1.环境：抢红包屏蔽个人功能实现<br>2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关</p>
-</blockquote>
-<h2 id="想法-步骤"><a href="#想法-步骤" class="headerlink" title="想法-步骤"></a>想法-步骤</h2><blockquote>
-<p>1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮</p>
-<p>2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中打印navigationController.viewcontrollers-找到push目标控制器</p>
-</blockquote>
-<p> <br><code>1、在BaseMsgContentViewController头文件中搜索‘button’关键词，找到-getRightBarButton方法</code></p>
-<p> <img src="media/15124463363144/15124566277256.jpg" alt=""></p>
-<p><code>2、Hook -getRightBarButton
-我们可以发现此方法返回的是UIBarButtonItem，我们创建一个UIBarButtonItem赋值为此处返回的item，通过断点可以找到对应的target点击方法-openChatInfo</code></p>
-<p><img src="media/15124463363144/15124582561414.jpg" alt=""></p>
-<p><code>3、Hook -openChatInfo 查看运行过程中调用了哪些方法</code></p>
-<p><img src="media/15124463363144/15124589221944.jpg" alt=""><br><code>通过查看调用方法列表找到相关页面逻辑方 sel:viewDidPush:</code><br><img src="media/15124463363144/15124589743771.jpg" alt=""></p>
-<p><code>4、Hook sel:viewDidPush:在里面打印Push控制器的层级数组</code></p>
-<p><img src="media/15124463363144/15124592201774.jpg" alt=""><br><code>由此可以看到页面跳转的层级，从而找到按钮跳转的目标控制器，添加控制开关</code><br><br><code>~最后实现效果,之后会考虑把最近做的微信小助手上线越狱商店</code></p>
-<p><img src="media/15124463363144/15124598118447.jpg" alt=""></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
-<p>记一次学习逆向原始获取目标的方法，作为逆向开发工程师，熟练运用IDA、Hopper等反汇编工具才是王道！共勉，加油!</p>
-</blockquote>
-<p><br></p>
-<ul>
-<li>Copyright © 2017 FantasticSkyBaby. All Rights Reserved</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Hooker-记一次原始方法找到目标控制器的方法&quot;&gt;&lt;a href=&quot;#Hooker-记一次原始方法找到目标控制器的方法&quot; class=&quot;headerlink&quot; title=&quot;Hooker~~~~记一次原始方法找到目标控制器的方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title></title>
@@ -195,6 +153,50 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>记一次原始方法找到目标控制器的方法</title>
+    <link href="https://fantasticskybaby.github.io/2015/12/09/iOSER~%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8E%9F%E5%A7%8B%E6%96%B9%E6%B3%95%E6%89%BE%E5%88%B0%E7%9B%AE%E6%A0%87%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://fantasticskybaby.github.io/2015/12/09/iOSER~记一次原始方法找到目标控制器的方法/</id>
+    <published>2015-12-09T14:55:25.000Z</published>
+    <updated>2017-12-05T09:53:56.972Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="记一次原始方法找到Hook目标控制器的方法"><a href="#记一次原始方法找到Hook目标控制器的方法" class="headerlink" title="记一次原始方法找到Hook目标控制器的方法"></a><strong><em>记一次原始方法找到Hook目标控制器的方法</em></strong></h1><h2 id="环境-目标"><a href="#环境-目标" class="headerlink" title="环境-目标"></a>环境-目标</h2><blockquote>
+<p>1.环境：抢红包屏蔽个人功能实现<br>2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关</p>
+</blockquote>
+<h2 id="想法-步骤"><a href="#想法-步骤" class="headerlink" title="想法-步骤"></a>想法-步骤</h2><blockquote>
+<p>1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮</p>
+<p>2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中打印navigationController.viewcontrollers-找到push目标控制器</p>
+</blockquote>
+<p> <br><code>1、在BaseMsgContentViewController头文件中搜索‘button’关键词，找到-getRightBarButton方法</code></p>
+<p> <img src="media/15124463363144/15124566277256.jpg" alt=""></p>
+<p><code>2、Hook -getRightBarButton
+我们可以发现此方法返回的是UIBarButtonItem，我们创建一个UIBarButtonItem赋值为此处返回的item，通过断点可以找到对应的target点击方法-openChatInfo</code></p>
+<p><img src="media/15124463363144/15124582561414.jpg" alt=""></p>
+<p><code>3、Hook -openChatInfo 查看运行过程中调用了哪些方法</code></p>
+<p><img src="media/15124463363144/15124589221944.jpg" alt=""><br><code>通过查看调用方法列表找到相关页面逻辑方 sel:viewDidPush:</code><br><img src="media/15124463363144/15124589743771.jpg" alt=""></p>
+<p><code>4、Hook sel:viewDidPush:在里面打印Push控制器的层级数组</code></p>
+<p><img src="media/15124463363144/15124592201774.jpg" alt=""><br><code>由此可以看到页面跳转的层级，从而找到按钮跳转的目标控制器，添加控制开关</code><br><br><code>~最后实现效果,之后会考虑把最近做的微信小助手上线越狱商店</code></p>
+<p><img src="media/15124463363144/15124598118447.jpg" alt=""></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
+<p>记一次学习逆向原始获取目标的方法，作为逆向开发工程师，熟练运用IDA、Hopper等反汇编工具才是王道！共勉，加油!</p>
+</blockquote>
+<p><br></p>
+<ul>
+<li>Copyright © 2017 FantasticSkyBaby. All Rights Reserved</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;记一次原始方法找到Hook目标控制器的方法&quot;&gt;&lt;a href=&quot;#记一次原始方法找到Hook目标控制器的方法&quot; class=&quot;headerlink&quot; title=&quot;记一次原始方法找到Hook目标控制器的方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;记一次原始方法找到Ho
+    
+    </summary>
+    
+    
+      <category term="iOSER" scheme="https://fantasticskybaby.github.io/tags/iOSER/"/>
     
   </entry>
   
