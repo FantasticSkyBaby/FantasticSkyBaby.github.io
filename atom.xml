@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fantasticskybaby.github.io/"/>
-  <updated>2017-05-12T06:43:22.000Z</updated>
+  <updated>2017-12-06T02:59:11.244Z</updated>
   <id>https://fantasticskybaby.github.io/</id>
   
   <author>
@@ -16,152 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://fantasticskybaby.github.io/2017/05/09/MarkDown%E7%94%A8%E6%B3%95/"/>
-    <id>https://fantasticskybaby.github.io/2017/05/09/MarkDown用法/</id>
-    <published>2017-05-09T07:42:59.000Z</published>
-    <updated>2017-05-12T06:43:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Markdown 语法和 MWeb 写作使用说明<br>Markdown 的设计哲学<br>本文约定<br>标题<br>第一级标题 </p><h1><br><a id="more"></a><br>第二级标题 <h2><br>第六级标题 <h6><br>强调<br>换行<br>列表<br>无序列表<br>有序列表<br>任务列表（Task lists）<br>图片<br>链接<br>区块引用<br>行内代码<br>多行或者一段代码<br>顺序图或流程图<br>表格<br>删除线<br>分隔线<br>MathJax<br>脚注（Footnote）<br>注释和阅读更多<br>TOC<br>Markdown 语法和 MWeb 写作使用说明<br>Markdown 的设计哲学<p></p>
-<p>Markdown 的目標是實現「易讀易寫」。<br>不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。<br>Markdown 的語法有個主要的目的：用來作為一種網路內容的寫作用語言。<br>本文约定</p>
-<p>如果有写 效果如下：， 在 MWeb 编辑状态下只有用 CMD + 4 或 CMD + R 预览才可以看效果。</p>
-<p>标题</p>
-<p>Markdown 语法：</p>
-<h1 id="第一级标题-lt-h1-gt"><a href="#第一级标题-lt-h1-gt" class="headerlink" title="第一级标题 &lt;h1&gt;"></a>第一级标题 <code>&lt;h1&gt;</code></h1><h2 id="第二级标题-lt-h2-gt"><a href="#第二级标题-lt-h2-gt" class="headerlink" title="第二级标题 &lt;h2&gt;"></a>第二级标题 <code>&lt;h2&gt;</code></h2><h6 id="第六级标题-lt-h6-gt"><a href="#第六级标题-lt-h6-gt" class="headerlink" title="第六级标题 &lt;h6&gt;"></a>第六级标题 <code>&lt;h6&gt;</code></h6><p>效果如下：</p>
-<p>第一级标题 </p><h1><br>第二级标题 <h2><p></p>
-<p>第六级标题 </p><h6><p></p>
-<p>强调</p>
-<p>Markdown 语法：</p>
-<p><em>这些文字会生成<code>&lt;em&gt;</code></em><br><em>这些文字会生成<code>&lt;u&gt;</code></em></p>
-<p><strong>这些文字会生成<code>&lt;strong&gt;</code></strong><br><strong>这些文字会生成<code>&lt;strong&gt;</code></strong><br>在 MWeb 中的快捷键为： CMD + U、CMD + I、CMD + B<br>效果如下：</p>
-<p>这些文字会生成<em><br>这些文字会生成<u></u></em></p>
-<p>这些文字会生成<strong><br>这些文字会生成<strong></strong></strong></p>
-<p>换行</p>
-<p>四个及以上空格加回车。<br>如果不想打这么多空格，只要回车就为换行，请勾选：Preferences - Themes - Translate newlines to <br> tags</p>
-<p>列表</p>
-<p>无序列表</p>
-<p>Markdown 语法：</p>
-<ul>
-<li>项目一 无序列表 <code>* + 空格键</code></li>
-<li>项目二</li>
-<li>项目二的子项目一 无序列表 <code>TAB + * + 空格键</code></li>
-<li>项目二的子项目二<br>在 MWeb 中的快捷键为： Option + U<br>效果如下：</li>
-</ul>
-<p>项目一 无序列表 <em> + 空格键<br>项目二<br>项目二的子项目一 无序列表 TAB + </em> + 空格键<br>项目二的子项目二<br>有序列表</p>
-<p>Markdown 语法：</p>
-<ol>
-<li>项目一 有序列表 <code>数字 + . + 空格键</code></li>
-<li>项目二 </li>
-<li>项目三</li>
-<li>项目三的子项目一 有序列表 <code>TAB + 数字 + . + 空格键</code></li>
-<li>项目三的子项目二<br>效果如下：</li>
-</ol>
-<p>项目一 有序列表 数字 + . + 空格键<br>项目二<br>项目三<br>项目三的子项目一 有序列表 TAB + 数字 + . + 空格键<br>项目三的子项目二<br>任务列表（Task lists）</p>
-<p>Markdown 语法：</p>
-<ul>
-<li>[ ] 任务一 未做任务 <code>- + 空格 + [ ]</code></li>
-<li>[x] 任务二 已做任务 <code>- + 空格 + [x]</code><br>效果如下：</li>
-</ul>
-<p>任务一 未做任务 - + 空格 + [ ]<br>任务二 已做任务 - + 空格 + [x]<br>图片</p>
-<p>Markdown 语法：</p>
-<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up"><br>格式: <img src="url" alt="Alt Text"><br>Control + Shift + I 可插入Markdown语法。<br>如果是 MWeb 的文档库中的文档，还可以用拖放图片、CMD + V 粘贴、CMD + Option + I 导入这三种方式来增加图片。<br>效果如下：</p>
-<p>GitHub set up</p>
-<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 -w + 图片宽度 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
-<p>GitHub set up</p>
-<p>链接</p>
-<p>Markdown 语法：</p>
-<p>email <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#x40;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#109;">&#101;&#x78;&#97;&#109;&#x70;&#x6c;&#101;&#x40;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#46;&#x63;&#111;&#109;</a><br><a href="http://github.com" target="_blank" rel="external">GitHub</a><br>自动生成连接  <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a><br>Control + Shift + L 可插入Markdown语法。<br>如果是 MWeb 的文档库中的文档，拖放或CMD + Option + I 导入非图片时，会生成连接。<br>效果如下：</p>
-<p>Email 连接： example@example.com<br>连接标题Github网站<br>自动生成连接像： <a href="http://www.github.com/" target="_blank" rel="external">http://www.github.com/</a> 这样</p>
-<p>区块引用</p>
-<p>Markdown 语法：</p>
-<p>某某说:</p>
-<blockquote>
-<p>第一行引用<br>第二行费用文字<br>CMD + Shift + B 可插入Markdown语法。<br>效果如下：</p>
-</blockquote>
-<p>某某说:</p>
-<p>第一行引用<br>第二行费用文字<br>行内代码</p>
-<p>Markdown 语法：</p>
-<p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code><br>CMD + K 可插入Markdown语法。<br>效果如下：</p>
-<p>像这样即可：<addr> code</addr></p>
-<p>多行或者一段代码</p>
-<p>Markdown 语法：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fancyAlert</span>(<span class="params">arg</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span>(arg) &#123;</div><div class="line">    $.facebox(&#123;<span class="attr">div</span>:<span class="string">'#foo'</span>&#125;)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>CMD + Shift + K 可插入Markdown语法。<br>效果如下：</p>
-<p>function fancyAlert(arg) {<br>    if(arg) {<br>    $.facebox({div:’#foo’})<br>    }</p>
-<p>}<br>顺序图或流程图</p>
-<p>Markdown 语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">张三-&gt;李四: 嘿，小四儿, 写博客了没?</div><div class="line">Note right of 李四: 李四愣了一下，说：</div><div class="line">李四--&gt;张三: 忙得吐血，哪有时间写。</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">st=&gt;start: 开始</div><div class="line">e=&gt;end: 结束</div><div class="line">op=&gt;operation: 我的操作</div><div class="line">cond=&gt;condition: 确认？</div><div class="line"></div><div class="line">st-&gt;op-&gt;cond</div><div class="line">cond(yes)-&gt;e</div><div class="line">cond(no)-&gt;op</div></pre></td></tr></table></figure>
-<p>效果如下（ Preferences - Themes - Enable sequence &amp; flow chart 才会看到效果 ）：</p>
-<p>张三-&gt;李四: 嘿，小四儿, 写博客了没?<br>Note right of 李四: 李四愣了一下，说：<br>李四–&gt;张三: 忙得吐血，哪有时间写。<br>st=&gt;start: 开始<br>e=&gt;end: 结束<br>op=&gt;operation: 我的操作<br>cond=&gt;condition: 确认？</p>
-<p>st-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op<br>更多请参考：<a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="external">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/" target="_blank" rel="external">http://adrai.github.io/flowchart.js/</a></p>
-<p>表格</p>
-<p>Markdown 语法：</p>
-<table>
-<thead>
-<tr>
-<th>第一格表头</th>
-<th>第二格表头</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>内容单元格 第一列第一格</td>
-<td>内容单元格第二列第一格</td>
-</tr>
-<tr>
-<td>内容单元格 第一列第二格 多加文字</td>
-<td>内容单元格第二列第二格</td>
-</tr>
-</tbody>
-</table>
-<p>效果如下：</p>
-<p>第一格表头    第二格表头<br>内容单元格 第一列第一格    内容单元格第二列第一格<br>内容单元格 第一列第二格 多加文字    内容单元格第二列第二格<br>删除线</p>
-<p>Markdown 语法：</p>
-<p>加删除线像这样用： 删除这些</p>
-<p>效果如下：</p>
-<p>加删除线像这样用： 删除这些</p>
-<p>分隔线</p>
-<p>以下三种方式都可以生成分隔线：</p>
-<hr>
-<hr>
-<hr>
-<p>效果如下：</p>
-<p>MathJax</p>
-<p>Markdown 语法：</p>
-<p>块级公式：<br>$$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
-<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =<br>1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}<br>{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
-<p>行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$<br>效果如下（Preferences - Themes - Enable MathJax 才会看到效果）：</p>
-<p>块级公式：<br>[ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} ]</p>
-<p>[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =<br>1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}<br>{1+\frac{e^{-8\pi}} {1+\ldots} } } } ]</p>
-<p>行内公式： (\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N)</p>
-<p>脚注（Footnote）</p>
-<p>Markdown 语法：</p>
-<p>这是一个脚注：[^sample_footnote]<br>效果如下：</p>
-<p>这是一个脚注：1</p>
-<p>注释和阅读更多</p>
-<p>Actions-&gt;Insert Read More Comment 或者 Command + .<br>注 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
-<p>TOC</p>
-<p>Markdown 语法：</p>
-<p>[TOC]<br>效果如下：</p>
-<p>这里是脚注信息 ↩</p>
-</h6></h2></h1></h6></h2></h1>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Markdown 语法和 MWeb 写作使用说明&lt;br&gt;Markdown 的设计哲学&lt;br&gt;本文约定&lt;br&gt;标题&lt;br&gt;第一级标题 &lt;/p&gt;&lt;h1&gt;&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>记一次原始方法找到目标控制器的方法</title>
-    <link href="https://fantasticskybaby.github.io/2015/12/09/iOSER~%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8E%9F%E5%A7%8B%E6%96%B9%E6%B3%95%E6%89%BE%E5%88%B0%E7%9B%AE%E6%A0%87%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>https://fantasticskybaby.github.io/2015/12/09/iOSER~记一次原始方法找到目标控制器的方法/</id>
+    <link href="https://fantasticskybaby.github.io/2015/12/09/iOSER-%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%8E%9F%E5%A7%8B%E6%96%B9%E6%B3%95%E6%89%BE%E5%88%B0%E7%9B%AE%E6%A0%87%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://fantasticskybaby.github.io/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/</id>
     <published>2015-12-09T14:55:25.000Z</published>
-    <updated>2017-12-05T09:53:56.972Z</updated>
+    <updated>2017-12-06T02:59:11.244Z</updated>
     
     <content type="html"><![CDATA[<h1 id="记一次原始方法找到Hook目标控制器的方法"><a href="#记一次原始方法找到Hook目标控制器的方法" class="headerlink" title="记一次原始方法找到Hook目标控制器的方法"></a><strong><em>记一次原始方法找到Hook目标控制器的方法</em></strong></h1><h2 id="环境-目标"><a href="#环境-目标" class="headerlink" title="环境-目标"></a>环境-目标</h2><blockquote>
 <p>1.环境：抢红包屏蔽个人功能实现<br>2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关</p>
@@ -171,15 +30,15 @@
 <p>2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中打印navigationController.viewcontrollers-找到push目标控制器</p>
 </blockquote>
 <p> <br><code>1、在BaseMsgContentViewController头文件中搜索‘button’关键词，找到-getRightBarButton方法</code></p>
-<p> <img src="media/15124463363144/15124566277256.jpg" alt=""></p>
+<p> <img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124566277256.jpg" alt=""></p>
 <p><code>2、Hook -getRightBarButton
 我们可以发现此方法返回的是UIBarButtonItem，我们创建一个UIBarButtonItem赋值为此处返回的item，通过断点可以找到对应的target点击方法-openChatInfo</code></p>
-<p><img src="media/15124463363144/15124582561414.jpg" alt=""></p>
+<p> <img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124582561414.jpg" alt=""></p>
 <p><code>3、Hook -openChatInfo 查看运行过程中调用了哪些方法</code></p>
-<p><img src="media/15124463363144/15124589221944.jpg" alt=""><br><code>通过查看调用方法列表找到相关页面逻辑方 sel:viewDidPush:</code><br><img src="media/15124463363144/15124589743771.jpg" alt=""></p>
+<p><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124589221944.jpg" alt=""><br><code>通过查看调用方法列表找到相关页面逻辑方 sel:viewDidPush:</code><br><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124589743771.jpg" alt=""></p>
 <p><code>4、Hook sel:viewDidPush:在里面打印Push控制器的层级数组</code></p>
-<p><img src="media/15124463363144/15124592201774.jpg" alt=""><br><code>由此可以看到页面跳转的层级，从而找到按钮跳转的目标控制器，添加控制开关</code><br><br><code>~最后实现效果,之后会考虑把最近做的微信小助手上线越狱商店</code></p>
-<p><img src="media/15124463363144/15124598118447.jpg" alt=""></p>
+<p><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124592201774.jpg" alt=""><br><code>由此可以看到页面跳转的层级，从而找到按钮跳转的目标控制器，添加控制开关</code><br><br><code>~最后实现效果,之后会考虑把最近做的微信小助手上线越狱商店</code></p>
+<p><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124598118447.jpg" alt=""></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
 <p>记一次学习逆向原始获取目标的方法，作为逆向开发工程师，熟练运用IDA、Hopper等反汇编工具才是王道！共勉，加油!</p>
 </blockquote>
