@@ -103,7 +103,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
     fancybox: false,
     motion: false,
     duoshuo: {
@@ -285,7 +285,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://fantasticskybaby.github.io/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/">
+    <link itemprop="mainEntityOfPage" href="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FantasticSkyBaby">
@@ -304,7 +304,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/" itemprop="url">记一次原始方法找到目标控制器的方法</a></h1>
+                <a class="post-title-link" href="/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/" itemprop="url">记一次原始方法找到目标控制器的方法</a></h1>
         
 
         <div class="post-meta">
@@ -316,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-09T22:55:25+08:00">
-                2015-12-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-05T16:55:25+08:00">
+                2017-12-05
               </time>
             
 
@@ -335,9 +335,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/#comments" itemprop="discussionUrl">
+                <a href="/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -359,7 +359,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  376
+                  374 字
                 </span>
               
 
@@ -375,7 +375,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  1 分钟
                 </span>
               
             </div>
@@ -395,32 +395,20 @@
       
         
           
-            <h1 id="记一次原始方法找到Hook目标控制器的方法"><a href="#记一次原始方法找到Hook目标控制器的方法" class="headerlink" title="记一次原始方法找到Hook目标控制器的方法"></a><strong><em>记一次原始方法找到Hook目标控制器的方法</em></strong></h1><h2 id="环境-目标"><a href="#环境-目标" class="headerlink" title="环境-目标"></a>环境-目标</h2><blockquote>
-<p>1.环境：抢红包屏蔽个人功能实现<br>2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关</p>
-</blockquote>
-<h2 id="想法-步骤"><a href="#想法-步骤" class="headerlink" title="想法-步骤"></a>想法-步骤</h2><blockquote>
-<p>1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮</p>
-<p>2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中打印navigationController.viewcontrollers-找到push目标控制器</p>
-</blockquote>
-<p> <br><code>1、在BaseMsgContentViewController头文件中搜索‘button’关键词，找到-getRightBarButton方法</code></p>
-<p> <img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124566277256.jpg" alt=""></p>
-<p><code>2、Hook -getRightBarButton
-我们可以发现此方法返回的是UIBarButtonItem，我们创建一个UIBarButtonItem赋值为此处返回的item，通过断点可以找到对应的target点击方法-openChatInfo</code></p>
-<p> <img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124582561414.jpg" alt=""></p>
-<p><code>3、Hook -openChatInfo 查看运行过程中调用了哪些方法</code></p>
-<p><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124589221944.jpg" alt=""><br><code>通过查看调用方法列表找到相关页面逻辑方 sel:viewDidPush:</code><br><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124589743771.jpg" alt=""></p>
-<p><code>4、Hook sel:viewDidPush:在里面打印Push控制器的层级数组</code></p>
-<p><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124592201774.jpg" alt=""><br><code>由此可以看到页面跳转的层级，从而找到按钮跳转的目标控制器，添加控制开关</code><br><br><code>~最后实现效果,之后会考虑把最近做的微信小助手上线越狱商店</code></p>
-<p><img src="/2015/12/09/iOSER-记一次原始方法找到目标控制器的方法/15124598118447.jpg" alt=""></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><blockquote>
-<p>记一次学习逆向原始获取目标的方法，作为逆向开发工程师，熟练运用IDA、Hopper等反汇编工具才是王道！共勉，加油!</p>
-</blockquote>
-<p><br></p>
-<ul>
-<li>Copyright © 2017 FantasticSkyBaby. All Rights Reserved</li>
-</ul>
+          Hooker~~~~记一次原始方法找到目标控制器的方法环境-目标
+1.环境：抢红包屏蔽个人功能实现2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关
 
-          
+想法-步骤
+1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮
+2
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -588,11 +576,6 @@
 
     </div>
 
-    <div id="music163player">
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=453463646&auto=1&height=66"></iframe>
-          </iframe>
-      </div>
-
   </aside>
 
 
@@ -606,6 +589,7 @@
   
   &copy;  2015 - 
   <span itemprop="copyrightYear">2017</span>
+  <span>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -613,19 +597,28 @@
 </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
-  </a>
-</div>
-
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      访客数
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      访问量
+    </span>
+  
+</div>
+
 
         
       </div>
@@ -634,6 +627,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -657,12 +652,11 @@
 
 
 
-
-
-
-
   
-  
+
+
+
+
 
 
 
@@ -686,10 +680,7 @@
   <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="/lib/three/three.min.js"></script>
-
-  
-  <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
