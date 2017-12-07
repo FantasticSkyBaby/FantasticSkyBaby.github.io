@@ -9,6 +9,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
 
 
 
@@ -86,13 +101,13 @@
 
 
 
-<meta name="description" content="Hooker~~~~记一次原始方法找到目标控制器的方法环境-目标 1.环境：抢红包屏蔽个人功能实现2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关  想法-步骤 1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮 2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中">
+<meta name="description" content="优秀的人，不是不合群，而是他们合群的人里面没有你  环境-目标 1.环境：抢红包屏蔽个人功能实现2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关  想法-步骤 1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮 2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中打">
 <meta name="keywords" content="iOSER">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记一次原始方法找到目标控制器的方法">
 <meta property="og:url" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/index.html">
 <meta property="og:site_name" content="FantasticSkyBaby">
-<meta property="og:description" content="Hooker~~~~记一次原始方法找到目标控制器的方法环境-目标 1.环境：抢红包屏蔽个人功能实现2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关  想法-步骤 1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮 2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中">
+<meta property="og:description" content="优秀的人，不是不合群，而是他们合群的人里面没有你  环境-目标 1.环境：抢红包屏蔽个人功能实现2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关  想法-步骤 1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮 2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中打">
 <meta property="og:image" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/15124566277256.jpg">
 <meta property="og:image" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/15124582561414.jpg">
 <meta property="og:image" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/15124589221944.jpg">
@@ -100,10 +115,10 @@
 <meta property="og:image" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/15126115624622.jpg">
 <meta property="og:image" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/15124592201774.jpg">
 <meta property="og:image" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/15124598118447.jpg">
-<meta property="og:updated_time" content="2017-12-07T02:03:20.352Z">
+<meta property="og:updated_time" content="2017-12-07T06:21:53.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记一次原始方法找到目标控制器的方法">
-<meta name="twitter:description" content="Hooker~~~~记一次原始方法找到目标控制器的方法环境-目标 1.环境：抢红包屏蔽个人功能实现2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关  想法-步骤 1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮 2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中">
+<meta name="twitter:description" content="优秀的人，不是不合群，而是他们合群的人里面没有你  环境-目标 1.环境：抢红包屏蔽个人功能实现2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关  想法-步骤 1.在Class-dump头文件BaseMsgContentViewController中寻找到聊天页右上角个人详情按钮 2.按钮-点击事件方法-打印方法运行中调用了哪些方法-根据新方法找到push相关方法-在push方法中打">
 <meta name="twitter:image" content="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/15124566277256.jpg">
 
 
@@ -133,8 +148,6 @@
 
 
   <link rel="canonical" href="https://fantasticskybaby.github.io/2017/12/05/iOSER-记一次原始方法找到目标控制器的方法/"/>
-
-
 
 
 
@@ -370,7 +383,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  374 字
+                  378 字
                 </span>
               
 
@@ -404,7 +417,9 @@
       
 
       
-        <h1 id="Hooker-记一次原始方法找到目标控制器的方法"><a href="#Hooker-记一次原始方法找到目标控制器的方法" class="headerlink" title="Hooker~~~~记一次原始方法找到目标控制器的方法"></a><strong><em>Hooker~~~~记一次原始方法找到目标控制器的方法</em></strong></h1><h2 id="环境-目标"><a href="#环境-目标" class="headerlink" title="环境-目标"></a>环境-目标</h2><blockquote>
+        <blockquote class="blockquote-center">优秀的人，不是不合群，而是他们合群的人里面没有你</blockquote>
+
+<h2 id="环境-目标"><a href="#环境-目标" class="headerlink" title="环境-目标"></a>环境-目标</h2><blockquote>
 <p>1.环境：抢红包屏蔽个人功能实现<br>2.目标：找到微信单聊个人信息控制器，添加”不抢此人红包”开关</p>
 </blockquote>
 <h2 id="想法-步骤"><a href="#想法-步骤" class="headerlink" title="想法-步骤"></a>想法-步骤</h2><blockquote>
@@ -457,7 +472,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/iOSER/" rel="tag"># iOSER</a>
+            <a href="/tags/iOSER/" rel="tag"><i class="fa fa-tag">::before</i> iOSER</a>
           
         </div>
       
@@ -660,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hooker-记一次原始方法找到目标控制器的方法"><span class="nav-number">1.</span> <span class="nav-text">Hooker~~~~记一次原始方法找到目标控制器的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境-目标"><span class="nav-number">1.1.</span> <span class="nav-text">环境-目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#想法-步骤"><span class="nav-number">1.2.</span> <span class="nav-text">想法-步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.3.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境-目标"><span class="nav-number">1.</span> <span class="nav-text">环境-目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#想法-步骤"><span class="nav-number">2.</span> <span class="nav-text">想法-步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
