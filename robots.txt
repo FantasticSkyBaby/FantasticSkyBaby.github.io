@@ -2,7 +2,8 @@ User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /categories/
-Allow: /about/
+Allow: /tags/
+Allow: /home/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -11,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://www.fantasticskybaby.pub/sitemap.xml
-Sitemap: http://www.fantasticskybaby.pub/baidusitemap.xml
+Sitemap: http://fantasticskybaby.pub/sitemap.xml
+Sitemap: http://fantasticskybaby.pub/baidusitemap.xml
