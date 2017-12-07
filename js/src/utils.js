@@ -29,11 +29,17 @@ NexT.utils = NexT.$u = {
       });
 
     $('.fancybox').fancybox({
-      helpers: {
-        overlay: {
-          locked: false
-        }
-      }
+      prevEffect	: 'none',
+      		nextEffect	: 'none',
+      		helpers	: {
+      			title	: {
+      				type: 'outside'
+      			},
+      			thumbs	: {
+      				width	: 50,
+      				height	: 50
+      			}
+      		}
     });
   },
 
